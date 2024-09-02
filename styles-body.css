@@ -1,0 +1,420 @@
+body{
+    background-color: rgb(251, 246, 238);
+}
+h1, h5, button{
+    font-family: var(--montserrat);
+}
+p{
+    font-family: var(--roboto);
+}
+:root{
+    --darkRed: #D22D33;
+    --lightRed: #E03E22;
+    --orange: #f1962b;
+    --yellow: #eed98e;
+    --roboto: 'Roboto', sans-serif;
+    --montserrat: "Montserrat", sans-serif;
+}
+main{
+    margin-top: 10%;
+    padding: 0px 75.6px;
+}
+.agents-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 75.6px;
+}
+.img-card{
+    border-radius: 10px;
+    height: 259px;
+    width: 392px;
+    max-width: 100%;
+    background-size: cover;
+}
+.agents-h1{
+    text-align: center;
+    font-family: var(--roboto);
+    font-weight: 900;
+    font-size: 100px;
+    margin-bottom: 90px;
+}
+.agents-card{
+    border: none;
+    width: 400px;
+}
+.agents-card-div{
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(128, 128, 128, 0.3);
+}
+.order-btn{
+    background-color: var(--orange);
+    color: white;
+    border-radius: 50px;
+    border: 1px solid white;
+    padding: 12px 40px;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.resturants{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.resturants h1{
+    text-align: center;
+    font-family: var(--roboto);
+    font-weight: 500;
+    margin-bottom: 50px;
+    color: var(--lightRed);
+}
+.resturant-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    padding: 0px 50px;
+    justify-content: space-around;
+    row-gap: 50px;
+}
+.food-div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(128, 128, 128, 0.3);
+}
+.food-div-content{
+    padding: 10px 20px;
+}
+.food-div-content a{
+    color: var(--lightRed);
+    text-underline-offset: 2px;
+    font-family: var(--roboto);
+}
+.food-div-content h5{
+    font-weight: bold;
+}
+.food-img{
+    width: 348px;
+    height: 232.438px;
+    border: 1px solid rgb(128, 128, 128, 0.3);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.all-resturants{
+   padding: 15px 50px;
+   font-weight: bold;
+   font-size: 18px;
+   border: 1px solid var(--lightRed);
+   background-color: transparent;
+   border-radius: 50px;
+   align-self: center;
+   margin-top: 50px;
+   color: var(--lightRed);
+}
+.all-resturants:hover{
+    background-color: var(--lightRed);
+    color: white;
+    transition: 0.2s;
+}
+.workings{
+    background: linear-gradient(50deg, var(--orange), var(--darkRed), var(--lightRed));
+    margin: 0px -76px;
+    margin-top: 10%;
+    padding: 40px 76px;
+}
+.workings > h1{
+    text-align: center;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 30px;
+}
+.workings-content{
+    color: white;
+    text-align: center;
+}
+.workings-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.workings-info *{
+    margin: 0;
+}
+.workings-link{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    text-align: left !important;
+}
+.workings-img{
+    width: 100px;
+    background-color: transparent;
+    margin-top: 10px;
+}
+.workings p{
+    font-size: 18px;
+    margin-top: 10px;
+}
+.workings h3{
+    color: white;
+    text-align: center;
+}
+.network{
+    background-color: white;
+    padding: 80px 76px;
+    margin: 0px -76px;
+}
+.join-network{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+.cooking-img{
+    width: 500px;
+    background-size: cover;
+    border-radius: 20px;
+}
+.join-us-div{
+    display: flex;
+    justify-content: space-between;
+}
+.join-us-div div{
+    display: flex;
+    flex-direction: column;
+}
+.join-us-div p{
+    font-size: 15px;
+    font-weight: light;
+}
+.grow-with-quickchow{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.grow-with-quickchow h1{
+    font-weight: 500;
+    color: var(--lightRed);
+}
+.network-img{
+    width: 80px;
+    border-radius: 10px;
+}
+.network-content{
+    font-weight: light;
+    font-size: 16px;
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.network-content h5{
+    color: black !important;
+    font-weight: bold;
+}
+.quickchow-intro{
+    font-size: 18px;
+}
+.network-btn{
+    background-color: var(--lightRed);
+    align-self: self-start;
+    color: white;
+    padding: 15px 60px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+.download{
+    margin-top: 10%;
+}
+.download-app{
+    display: flex;
+    gap: 10px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px;
+    padding: 100px 60px;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9)),url('assets/food-background.jpg');
+    background-size: contain;
+}
+.download-app h1{
+    font-weight: 600;
+    color: var(--lightRed);
+}
+.phone-div{
+    margin-bottom: -50px;
+    display: inline-flex;
+    align-items: end;
+}
+.phone-icon{
+    width: 600px;
+    margin-bottom: -50px;
+}
+.download-btn{
+    background-color: var(--lightRed);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 25px;
+    border-radius: 50px;
+    font-size: 18px;
+    color: white;
+    font-family: var(--montserrat);
+    font-weight: bold;
+    margin-top: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.apple-logo{
+    width: 25px;
+    filter: invert(100%) sepia(0%) saturate(7451%) hue-rotate(181deg) brightness(107%) contrast(98%);
+}
+.playstore-logo{
+    width: 25px;
+}
+footer{
+    background-color: white;
+    margin: 0px -76px;
+    margin-top: 10%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 76px;
+}
+.Q-logo{
+    width: 40px;
+}
+footer > div{
+    border-top-width: 1px;
+    border-top-color: rgb(10, 9, 9);
+}
+footer > div p{
+    margin: 0;
+}
+footer div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+@media (max-width: 576px) {
+    main{
+        padding: 0px 20px;
+    }
+    .resturants{
+        margin-top: 20%;
+    }
+    .resturant-grid{
+        grid-template-columns: repeat(1, 100%);
+        padding: 0px;
+        font-size: 20px;
+    }
+    .food-img{
+        width: 100%;
+    }
+    .cooking-img{
+        width: 350px;
+    }
+    .workings{
+        padding: 40px 20px;
+        margin: 0px -20px;
+        margin-top: 10%;
+    }
+    .workings p{
+        font-size: 20px;
+    }
+    .join-network{
+        flex-direction: column;
+        padding: 0px;
+        align-items: center;
+        gap: 50px;
+    }
+    .join-us-div {
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+    }
+    .network{
+        padding: 50px 20px;
+        margin: 0px -20px;
+    }
+    .network h5{
+        font-size: 25px;
+    }
+    .network-img{
+        width: 200px;
+        border-radius: 20px;
+    }
+    .network-img-div{
+        align-items: center;
+    }
+    .network-btn{
+        align-self: center;
+    }
+    .join-us-div div{
+        width: 100%;
+    }
+    .download{
+        margin: 20% 0%;
+    }
+    .download-app{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 30px;
+        gap: 60px;
+    }
+    .download-app > div{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+    }
+    .download-btn{
+        padding: 12px 20px;
+        align-items: center;
+        margin: 0;
+    }
+    .download-btn p{
+        margin: 0;
+        font-size: 12px;
+    }
+    .download-btn-div{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 10px;
+    }
+    .phone-div{
+        margin: -10px;
+        justify-content: center;
+    }
+    .phone-icon{
+        width: 300px;
+        margin-bottom: -30px;
+    }
+    .playstore-logo, .apple-logo{
+        width: 20px;
+    }
+    .grow-with-quickchow{
+        text-align: center;
+    }
+    .grow-with-quickchow h1{
+        font-weight: bold;
+    }
+    .grow-with-quickchow p{
+        font-size: 22px;
+    }
+    footer{
+        padding: 0px;
+        margin: 0px -20px;
+        margin-top: 10%;
+    }
+}

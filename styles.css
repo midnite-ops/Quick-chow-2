@@ -1,0 +1,214 @@
+.header{
+    height: 100vh;
+    position: relative;
+}
+.color-filter{
+    height: 100%;
+    background: linear-gradient(60deg, var(--orange), var(--darkRed), var(--lightRed));
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+}
+.nav-head{
+    padding: 15px 76.6px;
+}
+.nav-content{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.nav-btn{
+    display: flex;
+    justify-content: space-around;
+    border: none;
+    color: white;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(259deg) brightness(103%) contrast(103%);
+}
+.btn:focus, .navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+.center-nav{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.quick-chow-logo{
+    width: 200px;
+}
+.nav-ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: var(--roboto);
+    font-weight: 500;
+    font-size: 17px;
+    margin-right: 30px;
+}
+.nav-ul li a:hover{
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    transition-delay: 0.50s;
+}
+.account-btn{
+    display: flex;
+    align-items: center;
+    background-color: var(--orange);
+    border-radius: 5px;
+    padding: 10px 20px;
+    gap: 10px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.account-btn p{
+    color: white;
+    margin: 0;
+    font-weight: bold;
+    font-size: 17px;
+    font-family: var(--roboto);
+}
+.profile-icon{
+    width: 20px;
+}
+.signup-btn{
+    align-self: center;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-family: var(--roboto);
+    font-weight: bold;
+    border: none;
+    color: var(--orange);
+    background-color: white;
+}
+.signup-btn:hover{
+    color: white;
+    background-color: var(--orange);
+    transition: 0.15s;
+    border: none;
+}
+.header-btn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 25%;
+}
+.header-btn button{
+    background-color: var(--orange);
+    color: white;
+    border-radius: 50px;
+    border: 1px solid white;
+    padding: 13px 25px;
+    font-weight: bold;
+    border: none;
+}
+.header-btn button:hover{
+    opacity: 0.9;
+}
+
+.header-intro{
+    z-index: 3;
+    margin-top: 10%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    color: white;
+}
+.header-intro p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+.header-content, .header-img{
+    margin: 0;
+}
+.nav-link-text{
+    color: white !important;
+}
+/* This class is added when the user scrolls past the header */
+.nav-scroll{
+    background-color: white;
+    color: white;
+    transition: 0.5s;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+.nav-scroll a{
+    color: gray !important;
+}
+.header-btn-scroll button{
+    background-color: var(--lightRed);
+    border: none;
+}
+.nav-scroll .nav-btn{
+    filter: invert(0%) sepia(96%) saturate(16%) hue-rotate(246deg) brightness(98%) contrast(105%);
+}
+@media (max-width: 576px) {
+    .nav-head{
+        padding: 15px;
+    }
+    .header-content{
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-size: 20px;
+        padding: 0px 20px;
+        margin-bottom: 20px;
+    }
+    .header-content h1{
+        text-align: center;
+        font-size: 50px;
+    }
+    .header-img{
+        display: none;
+    }
+    .header-content p{
+        text-align: center;
+    }
+    .header-btn button{
+        display: none;
+    }
+    .header-intro > div{
+        margin: 0;
+        display: flex;
+        padding: 100px 0px !important;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .header-btn-scroll button{
+        background-color: transparent;
+        border: none;
+    }
+    .resturant-img{
+        background-image: url(assets/resturant-img.jpeg);
+        position: absolute;
+        background-size: cover;
+        height: 300px;
+        bottom: 40px;
+        right: 0;
+        left: 0;
+        background-position: center;
+    }
+    .quick-chow-logo{
+        width: 150px;
+    }
+    .center-nav{
+        display: inline;
+        flex-direction: column;
+    }
+    .nav-ul{
+        align-items: start;
+        font-size: 18px;
+    }
+    .nav-link-text{
+        color: gray !important;
+        border-bottom: 1px solid gray;
+        
+    }
+    .navbar-toggler-icon{
+        width: 2.5rem;
+        filter: invert(0%) sepia(96%) saturate(16%) hue-rotate(246deg) brightness(98%) contrast(105%);
+    }
+}

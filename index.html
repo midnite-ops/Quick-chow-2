@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/ICON 3.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-body.css">
+    <title>QuickChow</title>
+</head>
+<body>
+    <section class="header">
+      <div class="color-filter"></div>
+      <nav class="navbar navbar-expand-lg fixed-top container-fluid nav-head nav-head-js">
+        <div class="col-sm-10 col-lg-4">
+          <a class="navbar-brand m-0 p-0 logo-img-js" href="#">
+            <img class="quick-chow-logo" src="assets/QUICK CHOW FULL LOGO 2.png" alt="Quick Chow Logo">
+          </a>
+        </div>
+        <button class="navbar-toggler nav-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">QuickChow</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body center-nav">
+            <ul class="navbar-nav pe-3 nav-ul m-0">
+              <li class="nav-item d-none d-lg-block">
+                <a class="nav-link nav-link-text active" aria-current="page"  href="#How-it-works">Order Now</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-none d-lg-block nav-link-text active" aria-current="page" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-none d-lg-block nav-link-text active" aria-current="page" id="" href="#resturants">Resturants</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-none d-lg-block nav-link-text active" aria-current="page" href="#network">Join us</a>
+              </li>
+              <li class="nav-item d-lg-none">
+                <a class="nav-link nav-link-text active" aria-current="page" href="#network">Account</a>
+              </li>
+              <li class="nav-item d-lg-none">
+                <a class="nav-link nav-link-text active" aria-current="page" href="#network">Sign up</a>
+              </li>
+              <li class="nav-item d-lg-none">
+                <a class="nav-link nav-link-text active" aria-current="page" href="#network">Login</a>
+              </li>
+            </ul>
+            <div class="text-end header-btn header-btn-js">
+              <button>Sign up/Login</button>
+          </div>
+        </div>
+      </nav>
+      <div class="container col-xxl-10 header-intro">
+        <div class="row align-items-center g-5 py-5 justify-between">
+          <div class="col-lg-6 header-content">
+            <h1 class="display-1 fw-bold text-body-white lh-2 mb-3">You Don Chow?</h1>
+            <p class="lead d-none d-lg-block">
+              Quick chow, your go-to destination for fast, fresh, and delicious meals delivered straight to your door. Whether you’re craving a quick snack, a hearty meal, or a gourmet treat, we’ve got you covered with a wide range of options from your favorite local restaurants. Browse, order, and enjoy – all in just a few clicks.
+            </p>
+            <p class="d-lg-none">
+              Quick chow, your go-to destination for fast, fresh, and delicious meals delivered straight to your door. Your next bite is just minutes away!
+            </p>
+            <div class="d-grid gap-5 d-md-flex justify-content-md-start">
+              <button type="button" class="me-md-2 order-btn">
+                Get the app
+                <img class="playstore-logo" src="assets/playstore logo.png" alt="playstore logo">
+              </button>
+            </div>
+          </div>
+          <div class="resturant-img d-lg-none"></div>
+          <div class="col-10 col-sm-8 col-lg-6 d-md-none d-xl-block header-img">
+            <img src="assets/ chicken_icon.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <section id="resturants" class="resturants">
+        <h1 class="display-3">Meet the top resturants</h1>
+          <div class="resturant-grid resturant-grid-js"></div>
+        <button class="all-resturants">See all the resturants</button>
+      </section>
+
+      <section id="How-it-works" class="workings">
+        <h1 class="display-3">How it works</h1>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3 workings-content">
+          <div class="feature col workings-info">
+            <div class="feature-icon d-flex align-items-center justify-content-center fs-2 mb-3">
+              <img src="assets/workings-assets/order-img.avif" alt="order-icon" class="workings-img">
+            </div>
+            <h5 class="fs-2">Place an order</h5>
+            <p>
+               Begin by specifying your preferred cuisine and dietary preferences.  Choose the meal and indicate if you want sides, beverages, or desserts. Confirm portion sizes and select for pickup.
+            </p>
+          </div>
+          <div class="feature col workings-info">
+            <div class="feature-icon d-flex align-items-center justify-content-center fs-2 mb-3">
+              <img src="assets/workings-assets/resturant-img.avif" alt="resturant icon" class="workings-img">
+            </div>
+            <h5 class="fs-2">Resturant gets notified</h5>
+            <p>
+              When your order is placed, our system instantly notifies the restaurant, prompting swift preparation of your meal.
+            </p>
+          </div>
+          <div class="feature col workings-info">
+            <div class="feature-icon d-flex align-items-center justify-content-center fs-2 mb-3">
+              <img src="assets/workings-assets/location-img.jpeg" alt="location icon" class="workings-img">
+            </div>
+            <h5 class="fs-2">Delivery</h5>
+            <p>
+              Our courier service guarantees food delivery within 15 minutes, ensuring your meal arrives fresh and hot. We prioritize speed without compromising quality. Enjoy your favorite dishes promptly right to your doorstep.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="network" class="network">
+        <div class="join-network">
+          <div class="join-network-img">
+            <img class="cooking-img" src="assets/chef cooking.jpg" alt="A chef cooking">
+          </div>
+          <div class="grow-with-quickchow">
+            <div>
+              <h1 class="display-3">Join QuickChow now</h1>
+              <p  class="quickchow-intro">
+                Join our community and expand while getting that recognition in your business. Making money online has never been easier.
+              </p>
+            </div>
+            <div class="join-us-div row">
+              <div class="col-4 network-content">
+                <div class="network-img-div">
+                  <img src="assets/network-images/partnership.avif" alt="partnership image" class="network-img">
+                </div>
+                <div>
+                  <h5>Advertisement</h5>
+                  <p>
+                    Advertise your business with us and stand a chance to be one of our ambassadors.
+                  </p>
+                </div>
+              </div>
+              <div class="col-4 network-content">
+                <div class="network-img-div">
+                  <img src="assets/network-images/rider-2.jpg" alt="rider" class="network-img">
+                </div>
+                <div>
+                  <h5>Riders</h5>
+                  <p>
+                    Become one of our riders and earn up to 10k a week.
+                  </p>
+                </div>
+              </div>
+              <div class="col-4 network-content">
+                <div class="network-img-div">
+                  <img src="assets/network-images/delivery-png.avif" alt="delivery-img" class="network-img">
+                </div>
+                <div>
+                  <h5>Sales</h5>
+                  <p>
+                    Sign up with us and get more than enough sales to put you on the map.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button class="network-btn">
+              Sign up now
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="download" class="download">
+        <div class="download-app">
+          <div>
+            <h1 class="display-1">Experience speed today!</h1>
+            <div class="download-btn-div">
+              <div class="download-btn btn btn-lg">
+                <p>App Store</p>
+                <img class="apple-logo" src="assets/applestore logo.png" alt="">
+              </div>
+              <div class="download-btn">
+                <p>Play Store</p>
+                <img class="playstore-logo" src="assets/playstore logo.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="phone-div">
+            <img class="phone-icon" src="assets/new-phone-icon.png" alt="">
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div>
+          <img class="Q-logo" src="assets/QUICK CHOW Black Transparent.png" alt="">
+          <p>© 2024 QuickChow,inc</p>
+        </div>
+        <div></div>
+      </footer>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="index.js" type="module"></script>
+</body>
+</html>
